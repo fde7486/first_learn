@@ -25,6 +25,14 @@
             text-shadow: 2px 2px 5px rgb(117, 4, 4);
             color:rgb(233, 31, 31);
         }
+        .box{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content:space-around;
+            align-items:center;
+
+        }
         .slider_container {
             margin: 50px auto;
             width: 50vw;
@@ -32,16 +40,35 @@
             position: relative;
             
         }
-        img{
+        .Rotation{
             width: 50vw;
             min-width: 300px;
             border: 10px solid;    
             border-color:khaki;
         }
-        .test{
-            border:inset;
-            block-size: 3px;
-            border-color: lightcoral;            
+        .test{            
+            border-style:inset;
+            border-width: 3px;
+            border-color: lightcoral;  
+            background-color: rgba(0, 255, 255, 0.5);     
+        }
+        p{
+            color:saddlebrown;
+        }
+        table{
+            width: 20vw;
+            height: 15vh;
+            min-width: 180px;
+            min-height: 120px;
+            border-style:ridge;
+            border-width: 2px;
+            border-color: lightcoral;
+            align-items: center; 
+        }
+        tr,td{
+            border-style:inset;
+            border-width: 1px;
+            border-color: lightcoral;
         }
         .slider_container div {
             position: absolute;
@@ -137,25 +164,40 @@
         <h1>糖豆人：終極淘汰賽</h1>
         <h2><small class="text-muted">Fall Guys: Ultimate Knockout</small></h2>
     </div>
-    <div>
-        <div class="container-fluidp slider_container">
-            <div><img src="ss_1ece8bbe347c159fc3e87f82d25064d88d15f08f.600x338.jpg"></div>
-            <div><img src="ss_feb6f226399553f18fce1116e30ee22680b5f69b.600x338.jpg"></div>
-            <div><img src="ss_9e7f6eedd127e33298db07b13b4ff513e71de829.600x338.jpg"></div>
-            <div><img src="ss_60a269f20d74bafee4996149ea73dedf2c30cc53.600x338.jpg"></div>
-            <div><img src="ss_5482313e285391e79b888ff8b45a1658aff91d86.600x338.jpg"></div>
-            <div><img src="ss_a0758d69b45b016a386761e1415f2227542c27be.600x338.jpg"></div>
-            <div><img src="ss_b2b6b170330b8af1f50d0e90efad984adafeb281.600x338.jpg"></div>
-            <div><img src="ss_ce4bbc7829c339f77e302ca75bbe66b371a71dbe.600x338.jpg"></div>
-            <div><img src="ss_dbca15fd2b00d6069113e0d94bc8cedb9c99058d.600x338.jpg"></div>
-            <div><img src="ss_df2d12f278d6c0203e11fece84fc50226ff077d6.600x338.jpg"></div>
+    <div class="box">
+        <div>
+            <table>
+                <tr align-items="center">
+                    <td align="center"><a href="關卡.html"><img src="200825_1.jpg"; width="80px"></a><br>關卡介紹</td>
+                    <td align="center"><a href=""><img src="200825_2.jpg"; width="80px"></a><br>玩法介紹</td>
+                </tr>                
+            </table>
         </div>
-        <div class="test">
-            <p>《Fall Guys：終極淘汰賽（Fall Guys: Ultimate Knockout）》玩家將成群結隊參與一場瘋狂的競賽，直到最後出現一名勝利者為止。在《Fall Guys：終極淘汰賽》中，將有一堆奇怪的障礙來阻礙，還有許多不守規矩的競爭對手，玩家要面對依照物理定律設計的挑戰，玩家有機會藉此讓對手彈出去、掉落出局，隨著一關關加以克服，來拿到最後的王冠。</p>
-
+        <div class="slider_container">
+            <div class="Rotation"><img src="ss_1ece8bbe347c159fc3e87f82d25064d88d15f08f.600x338.jpg"></div>
+            <div class="Rotation"><img src="ss_feb6f226399553f18fce1116e30ee22680b5f69b.600x338.jpg"></div>
+            <div class="Rotation"><img src="ss_9e7f6eedd127e33298db07b13b4ff513e71de829.600x338.jpg"></div>
+            <div class="Rotation"><img src="ss_60a269f20d74bafee4996149ea73dedf2c30cc53.600x338.jpg"></div>
+            <div class="Rotation"><img src="ss_5482313e285391e79b888ff8b45a1658aff91d86.600x338.jpg"></div>
+            <div class="Rotation"><img src="ss_a0758d69b45b016a386761e1415f2227542c27be.600x338.jpg"></div>
+            <div class="Rotation"><img src="ss_b2b6b170330b8af1f50d0e90efad984adafeb281.600x338.jpg"></div>
+            <div class="Rotation"><img src="ss_ce4bbc7829c339f77e302ca75bbe66b371a71dbe.600x338.jpg"></div>
+            <div class="Rotation"><img src="ss_dbca15fd2b00d6069113e0d94bc8cedb9c99058d.600x338.jpg"></div>
+            <div class="Rotation"><img src="ss_df2d12f278d6c0203e11fece84fc50226ff077d6.600x338.jpg"></div>
         </div>
+        <div>
+            <table>
+                <tr align-items="center">
+                    <td align="center"><a href="https://store.steampowered.com/app/1097150/Fall_Guys_Ultimate_Knockout/?l=tchinese"><img src="200825_3.jpg"; width="80px"></a><br>steam購買</td>
+                    <td align="center"><img src="200825_4.jpg"; width="80px"></td>
+                </tr>
+            </table>
+        </div>
+        
     </div>
-
+    <div class="test">
+            <p>《Fall Guys：終極淘汰賽（Fall Guys: Ultimate Knockout）》玩家將成群結隊參與一場瘋狂的競賽，直到最後出現一名勝利者為止。在《Fall Guys：終極淘汰賽》中，將有一堆奇怪的障礙來阻礙，還有許多不守規矩的競爭對手，玩家要面對依照物理定律設計的挑戰，玩家有機會藉此讓對手彈出去、掉落出局，隨著一關關加以克服，來拿到最後的王冠。</p>
+    </div>
     
 
 

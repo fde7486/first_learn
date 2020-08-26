@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+        crossorigin="anonymous" />
+    <title>Fall Guys</title>
+    <style>
+        body {
+            background-image: url("142936.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .head {
+            background-color: rgba(208, 231, 79, 0.5);
+            height: 100px;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+            text-shadow: 2px 2px 5px rgb(117, 4, 4);
+            color: rgb(233, 31, 31);
+        }
+
+        .slider_container {
+            margin: 50px auto;
+            width: 50vw;
+            height: 220px;
+            position: relative;
+
+        }
+
+        img {
+            height: 25vw;
+            width: 45vw;
+            border: 10px solid;
+            border-color: khaki;
+
+        }
+
+        .container {
+            text-align: center;
+            /*將box裏的內容居中顯示*/
+        }
+
+        .btn {
+            display: inline-blocki;
+            /*讓a標簽變成行內塊級元素*/
+            text-decoration: none;
+            font-size: 12px;
+        }
+
+        .btn:active {
+            background-color: #666;
+            color: white;
+        }
+
+        #t {
+            font-size: 48px;
+            text-align: center;
+            text-shadow: 2px 2px 5px rgb(169, 230, 2);
+            color: rgb(233, 31, 31);
+            font-weight:bold;
+        }
+
+        #t1 {
+            font-size: 24px;
+            text-align:center;
+            color: rgb(100, 50, 3);
+            font-weight:bold;
+        }
+        .back{
+            background-color: rgb(0, 255, 255, 0.6);
+        }
+      
+       
+    </style>
+
+</head>
+
+<body>
+    <div class="head">
+        <a href="index.html">
+        <h1>糖豆人：終極淘汰賽</h1>
+        <h2><small class="text-muted">Fall Guys: Ultimate Knockout</small></h2>
+    </a>
+    </div>
+    <div>
+        <p id='t'>追尾遊戲</p>
+    </div>
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class='col-sm-1 col align-self-center'>
+                <a href="javascript:;" class="btn" data-control="last" style='font-size:72px;color:rgb(52, 197, 197)'><i
+                        class="fas fa-angle-left"></i></a>
+            </div>
+            <div class="box col-sm-10">
+                　　　　<img src="images/1.jpg" alt="pic" id="img">
+
+            </div>
+            <div class='col-sm-1 col align-self-center'>
+                <a href="javascript:;" class="btn" data-control="next" style='font-size:72px;color:rgb(52, 197, 197)'><i
+                        class="fas fa-angle-right"></i></a>
+            </div>
+        </div>
+        <br>
+        <div class="row ">
+            <div class="row align-items-center back">
+                <p id=t1>在時間結束前，必須有一條尾巴！一些參賽者很幸運地在開始擁有尾巴，但真正重要的是他們如何完成比賽。 偷一條尾巴，然後迴避其他人，直到最終的合資格!</p>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js"
+        integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg=="
+        crossorigin="anonymous"></script>
+    <script type="text/javascript">
+        var imgs = [//定義數組用來存儲圖片的路徑
+            'images/1.jpg',
+            'images/2.jpg',
+            'images/3.jpg',
+            'images/4.jpg',
+            'images/5.jpg',
+            'images/6.jpg',
+            'images/7.jpg',
+            'images/8.jpg'
+        ];
+        var text = [
+            '追尾遊戲',
+            '囤貨狂人',
+            '蹦跳俱樂部',
+            '激情足球',
+            '踮踮腳尖',
+            '障礙狂歡',
+            '完美配對',
+            '滾石行動',
+        ]
+        var text1 = [
+            '在時間結束前，必須有一條尾巴！一些參賽者很幸運地在開始擁有尾巴，但真正重要的是他們如何完成比賽。 偷一條尾巴，然後迴避其他人，直到最終的合資格!',
+            '在時間結束前，盡可能地把球推進自已顏色的區域!',
+            '避開轉動的柱子以符合條件！必須通過完美地跳躍在巨大旋轉檯上來避免被灌入粘液！',
+            '必須為自己的球隊進球並努力取得勝利！ 開球時出現了兩個巨型足球，但要注意那些使遊戲變得有趣的特殊物品，直到最後的哨子！',
+            '起點與終點之間隱藏著一條道路！參賽者必須通過反複試驗找到一條安全的路線，注意踩踏時所有搖晃的瓷磚都會掉落。作為一個團隊，尋找安全的路線，然後出賣您的朋友，最後跳到終點！',
+            '道路上有重重的障礙，必須突破它們已到達終點!',
+            '注意螢幕上顯示的各種水果，在限時內站到正確的水果上以躲避黏液',
+            '在旋轉的圓柱之間不斷奔跑，不要掉進黏液裡'
+        ]
+        var index = 0;//設置第一張圖片的索引值為0
+        var len = imgs.length;//獲取存儲圖片數組的長度
+        $('.btn').on('click', function () {//綁定點擊事件
+            if ($(this).data('control') === "last") {
+                //如果寫成 $(this).data(‘control‘) === ‘last‘是對的
+                //如果寫成 $(this).data(‘control‘) = ‘last‘那就始終為真了，沒意義
+                //如果寫成 ‘last‘ === $(this).data(‘control‘)是對的
+                //如果寫成 ‘last‘ = $(this).data(‘control‘)語句就會報一個錯誤
+                // index--;
+                // if(index<0){
+                // index = 0;
+                // }
+                // index--;
+                index = Math.max(0, --index);//如果index的值小於0，使index為0
+            } else
+                index = Math.min(len - 1, ++index);//如果index大於了數組長度 ，使index等於數組長度減一的值
+            $('#img').attr('src', imgs[index]);//動態改變圖片的路徑
+            $('#t').text(text[index])
+            $('#t1').text(text1[index])
+        });
+    </script>
+</body>
+
+</html>
